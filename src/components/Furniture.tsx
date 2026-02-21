@@ -77,7 +77,7 @@ export function Incubator({ position, rotation }: { position: [number, number, n
             {/* Glass Door */}
             <mesh position={[0, 0.4, 0.26]}>
                 <boxGeometry args={[0.5, 0.7, 0.02]} />
-                <meshPhysicalMaterial color="#ffffff" transmission={0.9} opacity={1} transparent roughness={0.1} />
+                <meshStandardMaterial color="#ffffff" transparent opacity={0.3} roughness={0.1} />
             </mesh>
             {/* Shelves */}
             <mesh position={[0, 0.2, 0.05]}><boxGeometry args={[0.5, 0.02, 0.4]} /><meshStandardMaterial color="#bdc3c7" /></mesh>

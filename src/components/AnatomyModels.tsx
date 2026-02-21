@@ -9,7 +9,7 @@ export function AnatomicalTorso({ position, rotation }: { position: [number, num
             {/* Torso Shell */}
             <mesh position={[0, 0.5, 0]}>
                 <capsuleGeometry args={[0.15, 0.3, 8, 8]} />
-                <meshPhysicalMaterial color="#ffccaa" transmission={0.4} opacity={0.8} transparent roughness={0.4} /> {/* Semi-transparent skin */}
+                <meshStandardMaterial color="#ffccaa" transparent opacity={0.5} roughness={0.4} /> /* Semi-transparent skin */
             </mesh>
 
             {/* Lungs */}
